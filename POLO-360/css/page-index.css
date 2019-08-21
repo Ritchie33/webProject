@@ -1,0 +1,352 @@
+/* 在这里编辑主页样式*/
+body{
+	background: url(../img/body-bg.png) repeat-x;
+}
+
+/*解决高度塌陷*/
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*固定元素的宽度和居中*/
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+/*设置header*/
+.header{
+	/*background-color: #bfa;*/
+	/*设置上内边距*/
+	padding-top: 37px;
+	/*设置下内边距*/
+	padding-bottom: 46px;
+}
+
+
+/*设置logo*/
+.logo{
+	/*设置logo左外边距*/
+	margin-left: 15px;
+}
+
+
+/*设置导航条*/
+.nav{
+	float: right;
+	/*设置上外边距*/
+	margin-top: 22px;
+	
+}
+
+
+/*设置导航条li浮动*/
+.nav li{
+	float: left;
+	/*设置左右内边距*/
+	padding: 0 10px;
+	/*设置左边框*/
+	border-left: 1px #d6d6d6 dotted;
+	/*设置文字居中*/
+	text-align: center;
+}
+
+
+/*设置导航条中的超链接*/
+.nav a{
+	/*设置字体颜色*/
+	color: #666;
+	
+	/*设置字体*/
+	font: bold 14px Georgia;
+	
+	/*去除下划线*/
+	text-decoration: none;
+}
+
+
+/*设置超链接移入效果*/
+.nav a:hover{
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+
+/*设置导航条中的小标题*/
+.nav p{
+	color: #b7b7b7;
+	font: 11px tahome;
+}
+
+/*设置banner*/
+.banner{
+	/*设置高度*/
+	height: 356px;
+	/*设置阴影背景*/
+	background-image: url(../img/banner-bg.png);
+	/*设置不重复*/
+	background-repeat: no-repeat;
+	/*设置背景图片起始位置*/
+	background-position: bottom;
+	/*开启相对定位*/
+	position: relative;
+}
+
+/*设置小圆点*/
+
+/**/
+.pointerDiv{
+	/*设置绝对定位*/
+	position: absolute;
+	top: 314px;
+	left: 15px;
+}
+
+
+.pointerDiv a{
+	/*设置浮动*/
+	float: left;
+	
+	/*设置宽度和高度*/
+	width: 17px;
+	height: 17px;
+	
+	/*设置背景图片*/
+	background-image: url(../img/pointer.png);
+	
+	/*设置小圆点之间的外边距*/
+	margin-left: 4px;
+}
+
+/*设置被选中小圆点样式*/
+.pointerDiv .active,
+.pointerDiv a:hover{
+	/*设置背景图片*/
+	background-image: url(../img/pointer-active.png);
+}
+
+
+/*设置content*/
+.content h1{
+	/*设置居中*/
+	text-align: center;
+	
+	/*设置字体*/
+	font: bold 24px georgia;
+	
+	/*设置内边距*/
+	padding:6px 0 20px 0;
+
+	/*设置背景*/
+	background: url(../img/line.png) no-repeat bottom center;
+	
+	/*设置下外边距*/
+	margin-bottom: 38px;
+}
+
+/*设置放置内容的内容区和联系区的浮动和宽度*/
+.content .pl,.content .cs,.content .uc,
+.contact .sc,.contact .co,.contact .nu{
+	float: left;
+	width: 300px;
+}
+
+.content .cs,.contact .co{
+	margin: 0 20px;
+}
+
+.content h2{
+	color: #11719e;
+	font: 21px georgia;
+}
+
+.content .p1{
+	color: #8c8c8c;
+	font: 12px helvetica;
+}
+
+/*设置图片div*/
+.content .imgDiv{
+	width: 299px;
+	height: 190px;
+	background: url(../img/img-bg.png) no-repeat;
+	
+	margin: 16px 0 10px 0;
+	
+	text-align: center;
+	padding-top: 12px;
+}
+
+/*设置第二个段落p2*/
+.content .p2{
+	height: 92px;
+	color: #3e3e3e;
+	font: 13px helvetica;
+}
+
+/*设置按钮的样式*/
+.content .lm{
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/btn1.png) no-repeat;
+	color: #016999;
+	font: 12px/40px helvetica;
+	/*设置文字的缩进*/
+	text-indent: 1em;
+	margin-bottom: 35px;
+}
+
+
+/*设置联系栏中的背景*/
+.contact{
+	background: url(../img/line.png) no-repeat top center; 
+}
+
+
+/*设置联系栏中的表单项*/
+
+.contact .txt{
+	width: 276px;
+	height: 33px;
+	line-height: 33px;
+	background: url(../img/input.png) no-repeat;
+	/*单独为IE6设置一个背景不随元素滚动*/
+	_background-attachment: fixed;
+	
+	/*去除默认边框*/
+	border: none;
+	/*去除默认内边距*/
+	padding: 0 10px;
+	margin: 0 0 16px 0;
+}
+
+.contact .tarea{
+	width: 276px;
+	height: 114px;
+	background: url(../img/textarea.png) no-repeat;
+	/*单独为IE6设置一个背景不随元素滚动*/
+	_background-attachment: fixed;
+	
+	/*去除默认边框*/
+	border: none;
+	/*去除默认滚动条*/
+	overflow: auto;
+	/*设置文本域不能调节大小*/
+	resize: none;
+	/*去除默认内外边距*/
+	padding: 10px;
+	margin: 0;
+}
+
+.contact .btn{
+	width: 163px;
+	height: 32px;
+	background: url(../img/btn2.png) no-repeat;
+	padding: 0;
+	margin: 11px 0px 23px;
+	font: 13px georgia;
+	color: white;
+	text-align: left;
+	text-indent: 1em;
+	
+	/*cursor可以设置鼠标指针样式*/
+	cursor: pointer;
+}
+
+/*设置联系栏中的标题*/
+.contact h2{
+	font: 18px/1 georgia;
+	color: #444;
+	border-bottom: 1px dashed #d3d3d3;
+	padding: 44px 0 10px 0;
+	margin-bottom: 15px;
+}
+
+/*设置联系栏左侧*/
+.sc .p2{
+	color: #444;
+	font: 12px/1 helvetical;
+}
+
+
+/*设置小图标*/
+.icon{
+	/*设置字体大小为0，去除空格*/
+	font-size: 0;
+	/*设置上外边距*/
+	margin-top: 4px;
+}
+
+.sc .icon a{
+	margin-right: 6px;
+}
+
+/*设置左侧第二个标题*/
+.sc .nl{
+	font: 18px/1 bold "gill sans mt";
+	
+	padding: 34px 0 10px;
+}
+
+/*设置左侧的表单项*/
+.sc .txt{
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+
+/*设置联系栏右侧*/
+.nu img{
+	float: left;
+	margin-right: 8px;
+}
+
+.nu p{
+	font: 12px helvetica;
+	color: #444;
+	height: 58px;
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 14px;
+	padding-bottom: 9px;
+}
+
+.nu .no-margin{
+	margin-bottom: 0;
+}
+
+
+/*设置footer*/
+.footer{
+	background: #333;
+	height: 173px;
+	border-top: 10px #4c4c4c solid;
+}
+
+.footer a,.footer p{
+	color: #999;
+	font: 11px helvetica;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	color: #cccaca;
+	text-decoration: underline;
+}
+
+.footer p{
+	margin-left: 8px;
+	margin-right: 23px;
+	margin-bottom: 6px;
+}
+
+.footer .w{
+	padding-top: 18px;
+}
+
+.footer .cr{
+	float: right;
+}
